@@ -164,7 +164,7 @@ document.querySelector("." + name).onclick = ()=>{settings.customSkin = link; co
 		const logo = document.createElement("img");
 		const node = document.createElement("p");
 		//var numBots = checkBots();
-		const textnode = document.createTextNode("anani sikeyim yiğit snay.io script.   ");
+		const textnode = document.createTextNode("Spax & Peps snay.io script.   ");
 		const menuTitle = document.querySelector("#title");
 		menuTitle.src = "https://cdn.discordapp.com/attachments/1110945421586604082/1121098272065466368/image-removebg-preview_1.png";
 		menuTitle.style.position = "absolute";
