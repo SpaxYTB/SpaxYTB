@@ -20,7 +20,7 @@ myDiscord.style = "height: 50px; width: 120px; position: absolute; top: -15px; r
 myDiscord.innerText = "Discord";
     document.querySelector("#main-menu").append(myDiscord);
     myDiscord.onclick = ()=>{
-    window.open("https://discord.gg/fK7DkxtRVv");
+    window.open("https://discord.gg/kN3pb7fTQg");
 }
 myDiscord.style.cursor = "pointer";
 myDiscord.style.backgroundSize = "100% 100%";
