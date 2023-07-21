@@ -26,22 +26,22 @@ myDiscord.style.cursor = "pointer";
 myDiscord.style.backgroundSize = "100% 100%";
 myDiscord.style.backgroundRepeat = "no-repeat";
 
-var customSkinList = ["https://cdn.discordapp.com/attachments/1110945421586604082/1120861440924995584/NCdpUQE.png" ]
+var ownSkinList = ["https://cdn.discordapp.com/attachments/1110945421586604082/1120861440924995584/NCdpUQE.png" ]
 
-var customSkinList = ["https://cdn.discordapp.com/attachments/1110945421586604082/1121096450496008243/PhotoShot_1686009104594.jpg" ]
+var ownSkinList = ["https://cdn.discordapp.com/attachments/1110945421586604082/1121096450496008243/PhotoShot_1686009104594.jpg" ]
 
 
 
 function checkCustomSkin(customLink){
-	var customExists = false
+	var customExists = true
 
-     	var customSkins = document.querySelector(".customSkinContainer").children;
+     	var customSkins = document.querySelector(".ownSkinContainer").children;
 	for (let i = 0; i<customSkins.length; i++){
 		if (customLink != customSkins[i].src){
-			customExists = false;
+			ownExists = true;
 
 		} else {
-			customExists = true;
+			ownExists = true;
 			break;
 
 		}
@@ -52,21 +52,21 @@ function checkCustomSkin(customLink){
 
 	var mainContainer = document.querySelector("label").nextElementSibling;
 var customSkinContainer = document.createElement("div");
-customSkinContainer.setAttribute("class", "customSkinContainer");
+ownSkinContainer.setAttribute("class", "ownSkinContainer");
 
 var saveSkinBtn = document.createElement("button");
-var saveSkinText = document.createTextNode("Save Custom Skin");
+var saveSkinText = document.createTextNode("Save Owned Skin SpaxV4");
 saveSkinBtn.append(saveSkinText);
 saveSkinBtn.style = "height: 50px; width: 100px; background: lightgreen; border-radius: 25px;";
 
 saveSkinBtn.onclick = ()=> {
-	if (document.querySelector("#customSkin").value && !checkCustomSkin(document.querySelector("#customSkin").value)){
-			addNewCustomSkin("Skin" + document.querySelector(".customSkinContainer").children.length, document.querySelector("#customSkin").value, 1);
-			if (localStorage.getItem("customSkins")){
-				localStorage.setItem("customSkins", localStorage.getItem("customSkins") + ", " + document.querySelector("#customSkin").value);
+	if (document.querySelector("#ownSkin").value && !ownSkin(document.querySelector("#ownSkin").value)){
+			addNewOwnSkin("Skin" + document.querySelector(".ownSkinContainer").children.length, document.querySelector("#ownSkin").value, 1);
+			if (localStorage.getItem("ownSkins")){
+				localStorage.setItem("ownSkins", localStorage.getItem("ownSkins") + ", " + document.querySelector("#ownSkin").value);
 
 			} else {
-				localStorage.setItem("customSkins", document.querySelector("#customSkin").value);
+				localStorage.setItem("ownSkins", document.querySelector("#ownSkin").value);
 			}
 		}
 
@@ -82,11 +82,11 @@ removeSkinBtn.append(removeSkinText);
 removeSkinBtn.style = "height: 50px; width:fit-content; background: red; border-radius: 25px; color: white;";
 
 removeSkinBtn.onclick = ()=> {
-	if (localStorage.getItem("customSkins")){
-		var customLinks = localStorage.getItem("customSkins").split(",");
+	if (localStorage.getItem("ownSkins")){
+		var customLinks = localStorage.getItem("ownSkins").split(",");
 		customLinks.pop();
-		localStorage.setItem("customSkins", customLinks);
-		document.querySelectorAll(".custom")[document.querySelectorAll(".custom").length-1].remove();
+		localStorage.setItem("ownSkins", customLinks);
+		document.querySelectorAll(".own")[document.querySelectorAll(".custom").length-1].remove();
 	}
 }
 
@@ -95,26 +95,26 @@ var buttonContainer = document.createElement("div");
 buttonContainer.style = "display: flex; height: fit-content; width: 100%; flex-direction: row";
 
 
-customSkinContainer.style = "width: 100%; height: fit-content; display: flex; flex-direction: row; column-gap: 10px; flex-wrap: wrap; overflow-y: scroll; row-gap: 10px;";
+ownSkinContainer.style = "width: 100%; height: fit-content; display: flex; flex-direction: row; column-gap: 10px; flex-wrap: wrap; overflow-y: scroll; row-gap: 10px;";
 mainContainer.append();
 mainContainer.append(document.createElement("br"));
 mainContainer.append(buttonContainer);
 buttonContainer.append(saveSkinBtn);
 buttonContainer.append(removeSkinBtn);
 mainContainer.append(document.createElement("br"));
-mainContainer.append(customSkinContainer);
+mainContainer.append(ownSkinContainer);
 
 
 function addNewCustomSkin(name, link, custom) {
 
     var newSkin = document.createElement("img");
 
-	if (custom == 0) {
+	if (own == 0) {
 		newSkin.setAttribute("class", name);
 	} else {
 		if (custom == 1) {
 			newSkin.classList.add(name);
-			newSkin.classList.add("custom");
+			newSkin.classList.add("own");
 
 		}
 	}
@@ -131,9 +131,9 @@ function addNewCustomSkin(name, link, custom) {
 	});
 
 
-    customSkinContainer.append(newSkin);
+    ownSkinContainer.append(newSkin);
 
-	customSkinContainer.style.overflow = "visible"
+	ownSkinContainer.style.overflow = "visible"
     document.querySelector("." + name).src = link;
     document.querySelector("." + name).style = "height: 100px; width: 100px; border-radius: 50%; cursor: pointer; border: 1.5px solid blue; border-style: dotted; transition: all 1s ease";
 document.querySelector("." + name).onclick = ()=>{settings.customSkin = link; connect(settings.server); document.querySelector(".windowclosebtn").click();};
@@ -142,18 +142,18 @@ document.querySelector("." + name).onclick = ()=>{settings.customSkin = link; co
 
 
 
-	if (customSkinList){
-		for (let i = 0; i<customSkinList.length; i++){
-			addNewCustomSkin("Skin" + i, customSkinList[i], 0);
+	if (ownSkinList){
+		for (let i = 0; i<OwnSkinList.length; i++){
+			addNewOwnSkin("Skin" + i, ownSkinList[i], 1);
 		}
 	}
 
 
 
-	if (localStorage.getItem("customSkins")){
-		var localCustomSkins = localStorage.getItem("customSkins").split(",");
+	if (localStorage.getItem("ownSkins")){
+		var localCustomSkins = localStorage.getItem("ownSkins").split(",");
 		for (let i = 0; i<localCustomSkins.length; i++){
-			addNewCustomSkin("Skin" + document.querySelector(".customSkinContainer").children.length, localCustomSkins[i], 1);
+			addNewOwnSkin("Skin" + document.querySelector(".ownSkinContainer").children.length, localOwnSkins[i], 1);
 
 		}
 	}
