@@ -21,14 +21,14 @@ function setupUI() {
     _0xf662x4['appendChild'](_0xf662x6);
     var _0xf662x7 = document['createElement']('div');
     _0xf662x7['style'] = 'height: 50px; width: 120px; position: absolute; border-radius: 25px; border: 2px solid blue; background: gray; text-align: center; color: white;';
-    _0xf662x7['innerText'] = 'Patreon';
+    _0xf662x7['innerText'] = 'Youtube';
     document['querySelector']('#main-menu')['append'](_0xf662x7);
     _0xf662x7['style']['top'] = '35px';
     _0xf662x7['style']['right'] = '5px';
     _0xf662x7['style']['backgroundSize'] = '100% 100%';
-    _0xf662x7['setAttribute']('class', 'Peps Patrean Save Ukrania');
+    _0xf662x7['setAttribute']('class', 'Peps YT Save Ukrania');
     _0xf662x7['onclick'] = () => {
-        window['open']('https://patreon.com/ShazamHax?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link')
+        window['open']('https://www.youtube.com/channel/UCQbbuLna7D7m8RI3Pib3E4Q')
     };
     _0xf662x7['style']['cursor'] = 'pointer';
     var _0xf662x8 = document['createElement']('div');
@@ -645,7 +645,7 @@ setInterval(() => {
         currentSplits['innerText'] = window['stats']['mycells'] + '/16'
     }
 });
-var cribl = ['https://i.imgur.com/QE5QZJk.gif', 'https://cdn.discordapp.com/attachments/1110945421586604082/1120861440924995584/NCdpUQE.png', 'https://media.discordapp.net/attachments/857714045251878972/981379575621750794/gif_3_satanic.gif', 'https://cdn.discordapp.com/attachments/1121201461133574156/1132423279508996196/IMG_1030.png', 'https://cdn.discordapp.com/attachments/1121201461133574156/1132425420558573578/ab67616d0000b273e5d99e93a23524b660e15162.png', 'https://cdn.discordapp.com/attachments/1127690530483089458/1127707949951885362/joker.png', 'https://cdn.discordapp.com/attachments/1121201461133574156/1132425621084053695/Picsart_23-07-05_19-21-23-357.png'];
+var cribl = ['https://www.snay.io/assets/skins/Mei.png', 'https://www.snay.io/assets/skins/season-point.png', 'https://www.snay.io/assets/skins/pellet1_image.png', 'https://www.snay.io/assets/skins/pellet2_image.png', 'https://www.snay.io/assets/skins/pellet3_image.png', 'https://www.snay.io/assets/skins/pellet_image.png', 'https://www.snay.io/assets/skins/heart.png'];
 
 function setSkinsEvent() {
     const _0xf662x44 = new MutationObserver(function() {
