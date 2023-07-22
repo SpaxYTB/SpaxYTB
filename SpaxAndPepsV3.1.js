@@ -26,9 +26,9 @@ function setupUI() {
     _0xf662x7['style']['top'] = '35px';
     _0xf662x7['style']['right'] = '5px';
     _0xf662x7['style']['backgroundSize'] = '100% 100%';
-    _0xf662x7['setAttribute']('class', 'Peps YT Save Ukrania');
+    _0xf662x7['setAttribute']('class', 'NVKT YT Save Ukrania');
     _0xf662x7['onclick'] = () => {
-        window['open']('https://www.youtube.com/channel/UCQbbuLna7D7m8RI3Pib3E4Q')
+        window['open']('https://youtube.com/@NVKT_LEGEND')
     };
     _0xf662x7['style']['cursor'] = 'pointer';
     var _0xf662x8 = document['createElement']('div');
@@ -36,7 +36,7 @@ function setupUI() {
     _0xf662x8['innerText'] = 'Discord';
     document['querySelector']('#main-menu')['append'](_0xf662x8);
     _0xf662x8['onclick'] = () => {
-        window['open']('https://discord.gg/x2bcfMHwCa')
+        window['open']('https://discord.gg/GpUTWJncNj')
     };
     _0xf662x8['style']['cursor'] = 'pointer';
     _0xf662x8['style']['backgroundSize'] = '100% 100%';
