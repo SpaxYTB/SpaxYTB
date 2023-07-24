@@ -410,7 +410,7 @@ function createLoginEvent() {
             console['log']('Logged out, removing emojis settings');
             clearEmojisBinds();
             document['querySelector']('#account-lvl')['innerText'] = '120';
-            document['querySelector']('#account-xp')['innerText'] = '1729372';
+            document['querySelector']('#account-xp')['innerText'] = '%0';
             document['querySelector']('#account-coins')['innerText'] = '3729103'
         }
     });
