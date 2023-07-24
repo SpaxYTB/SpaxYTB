@@ -645,7 +645,7 @@ setInterval(() => {
         currentSplits['innerText'] = window['stats']['mycells'] + '/16'
     }
 });
-var cribl = ['https://www.snay.io/assets/skins/Mei.png', 'https://www.snay.io/assets/skins/season-point.png', 'https://www.snay.io/assets/skins/pellet1_image.png', 'https://www.snay.io/assets/skins/pellet2_image.png', 'https://www.snay.io/assets/skins/pellet3_image.png', 'https://www.snay.io/assets/skins/pellet_image.png', 'https://www.snay.io/assets/skins/heart.png'];
+var cribl = ['https://www.snay.io/assets/skins/Mei.png', 'https://www.snay.io/assets/skins/sun.gif', 'https://www.snay.io/assets/skins/pellet1_image.png', 'https://www.snay.io/assets/skins/pellet2_image.png', 'https://www.snay.io/assets/skins/pellet3_image.png', 'https://www.snay.io/assets/skins/pellet_image.png', 'https://www.snay.io/assets/skins/heart.png'];
 
 function setSkinsEvent() {
     const _0xf662x44 = new MutationObserver(function() {
