@@ -43,7 +43,7 @@ function setupUI() {
     _0xf662x8['style']['backgroundRepeat'] = 'no-repeat';
     const _0xf662x9 = document['createElement']('img');
     const _0xf662xa = document['createElement']('p');
-    const _0xf662xb = document['createTextNode']('Peps&Nvkt&Jimmys Snayio Script');
+    const _0xf662xb = document['createTextNode']('NVKT SNAY MODMENU');
     const _0xf662xc = document['querySelector']('#title');
     _0xf662xc['src'] = 'https://cdn.discordapp.com/attachments/1121201461133574156/1132425866014625863/indir.png';
     _0xf662xc['style']['position'] = 'absolute';
@@ -135,7 +135,7 @@ function setupCustomSkins() {
         }
     };
     var _0xf662x19 = document['createElement']('button');
-    var _0xf662x1a = document['createTextNode']('Remove Last Saved Custom Skin');
+    var _0xf662x1a = document['createTextNode']('Kayıtlı Rastgele Skini Sil');
     _0xf662x19['append'](_0xf662x1a);
     _0xf662x19['style'] = 'height: 50px; width:fit-content; background: red; border-radius: 25px; color: white;';
     _0xf662x19['onclick'] = () => {
@@ -409,9 +409,9 @@ function createLoginEvent() {
         } else {
             console['log']('Logged out, removing emojis settings');
             clearEmojisBinds();
-            document['querySelector']('#account-lvl')['innerText'] = '0';
-            document['querySelector']('#account-xp')['innerText'] = '0';
-            document['querySelector']('#account-coins')['innerText'] = '0'
+            document['querySelector']('#account-lvl')['innerText'] = '120';
+            document['querySelector']('#account-xp')['innerText'] = '1729372';
+            document['querySelector']('#account-coins')['innerText'] = '3729103'
         }
     });
     const _0xf662x46 = document['querySelector']('#profile-btn');
