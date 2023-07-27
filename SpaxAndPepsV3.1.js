@@ -65,7 +65,7 @@ function setupUI() {
     _0xf662x9['style']['top'] = '5%';
     _0xf662x9['style']['borderRadius'] = '50%';
     _0xf662x9['style']['opacity'] = '70%';
-    _0xf662x9['src'] = 'https://cdn.discordapp.com/attachments/1121201461133574156/1132422287195394058/IMG_0801.png';
+';
     _0xf662x9['style']['height'] = '10%';
     _0xf662x9['style']['width'] = '6%';
     _0xf662x9['style']['border'] = '2px solid black';
