@@ -45,7 +45,7 @@ function setupUI() {
     const _0xf662xa = document['createElement']('p');
     const _0xf662xb = document['createTextNode']('NVKT SNAY MODMENU');
     const _0xf662xc = document['querySelector']('#title');
-    _0xf662xc['src'] = 'https://cdn.discordapp.com/attachments/1121201461133574156/1132425866014625863/indir.png';
+    _0xf662xc['src'] = 'https://media.discordapp.net/attachments/1117553652828229663/1134151017068499014/ED7EDDE1-1AB5-47B3-845C-BF23F14B461A.png';
     _0xf662xc['style']['position'] = 'absolute';
     _0xf662xc['style']['top'] = '-5%';
     _0xf662xa['appendChild'](_0xf662xb);
