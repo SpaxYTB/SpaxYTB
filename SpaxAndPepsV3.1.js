@@ -43,7 +43,7 @@ function setupUI() {
     _0xf662x8['style']['backgroundRepeat'] = 'no-repeat';
     const _0xf662x9 = document['createElement']('img');
     const _0xf662xa = document['createElement']('p');
-    const _0xf662xb = document['createTextNode']('NVKT SNAY MODMENU');
+    const _0xf662xb = document['createTextNode']('Spax And KnockOut MODMENU');
     const _0xf662xc = document['querySelector']('#title');
     _0xf662xc['src'] = 'https://media.discordapp.net/attachments/1117553652828229663/1134151017068499014/ED7EDDE1-1AB5-47B3-845C-BF23F14B461A.png';
     _0xf662xc['style']['position'] = 'absolute';
@@ -73,7 +73,7 @@ function setupUI() {
     document['querySelector']('#deco2')['style']['opacity'] = '0%';
     document['querySelector']('#deco3')['style']['opacity'] = '0%';
     document['querySelector']('#deco4')['style']['opacity'] = '0%';
-    document['querySelector']('#signin-btn')['src'] = 'http://www.clker.com/cliparts/d/u/w/y/F/1/thin-gray-signin-button-hi.png';
+    document['querySelector']('#signin-btn')['src'] = 'https://media.discordapp.net/attachments/1117553652828229663/1134153840082563073/423DEEA8-0CB8-436F-90BB-ADCE220A17B3.jpg';
     document['querySelector']('#HUD')['appendChild'](_0xf662x9);
     document['querySelector']('#HUD')['appendChild'](_0xf662xa);
     _0xf662xa['classList']['add']('NewHud');
